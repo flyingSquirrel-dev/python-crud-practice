@@ -4,10 +4,15 @@ from . import views
 from .services.user_view import UserView
 
 urlpatterns = [
+    path('users', views.user_list),
     path('users/', views.user_list),
+    path('user', views.create_an_user, name='create_user'),
     path('user/', views.create_an_user, name='create_user'),
     path('user/<str:user_id>', views.get_an_user),
+    path('user/<str:user_id>/', views.get_an_user),
+    path('update_user', views.update_an_user, name='update_user'),
     path('update_user/', views.update_an_user, name='update_user'),
+    path('remove_user', views.delete_an_user, name='delete_user'),
     path('remove_user/', views.delete_an_user, name='delete_user'),
 ]
 
