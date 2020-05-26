@@ -1,9 +1,7 @@
 # Environments
 .env
 myvenv
-myvenv/
-myvenv/include/
-myvenv/src/
+/myvenv/
 
 # Django stuff:
 *.log
@@ -11,4 +9,4 @@ local_settings.py
 db.sqlite3
 db.sqlite3-journal
 
-.idea
+/.idea
