@@ -1,0 +1,12 @@
+# Environments
+.env
+myvenv
+/myvenv/
+
+# Django stuff:
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+
+/.idea
